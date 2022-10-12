@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container col-8">
+        <h1><center>CSS Injection</center></h1>
+        <p class="alert alert-success">Flag is in http://localhost:9009/flag.html</p>
+        <div class="card col-6 mx-auto mt-5">
+            <div class="card-body">
+                <form action="/send.html" method="post">
+                    <div class="form-group">
+                        <label>CSS Inject: <span style="color: red;">http://localhost:9009/flag.html?css=</span></label>
+                        <input type="text" name="css" id="" class="form-control">
+                    </div>
+                    <button class="btn btn-info mx-auto">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- <html>
+            <h1>Here Flag</h1>
+            <link rel="stylesheet href="${encodeURI(req.query.css)}">
+            <form>
+                <input name="username" value="vatvo69">
+                <input name="flag" type="hidden" value="Fake_Flag">
+                <input type="submit" value="submit">
+            </form>
+        </html> -->
+    </div>
+</body>
+</html>

