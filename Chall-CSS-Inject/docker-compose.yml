@@ -2,9 +2,8 @@ version: "3.0"
 
 services:
   server:
-    build:
-      context: .
+    build: .
     volumes:
-      - /src:/app
+      - ./src:/app
     ports:  
       - "1337:80"
