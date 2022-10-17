@@ -1,9 +1,0 @@
-version: "3.0"
-
-services:
-  server:
-    build: .
-    volumes:
-      - ./src:/app
-    ports:  
-      - "1337:80"
